@@ -28,6 +28,9 @@ set smartcase
 
 noremap <LEADER><CR> :nohlsearch<CR>
 
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
 map s <nop>
 map sl :set splitright<CR>:vsplit<CR>
 map sj :set nosplitright<CR>:vsplit<CR>
@@ -40,8 +43,7 @@ map <LEADER>k <C-w>k
 map <LEADER>l <C-w>l
 
 
-map rr :MarkdownPreview<CR>
-map ss :QuickRun<CR>
+map rr :QuickRun<CR>
 
 map<LEADER>l <C-w>l
 map<LEADER>i <C-w>k
@@ -55,12 +57,12 @@ map <right> :vertical resize+5<CR>
 call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'connorholyday/vim-snazzy'
-Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'turbio/bracey.vim'
 Plug 'thinca/vim-quickrun'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 let g:SnazzyTransparent = 1
+let g:coc_global_extensions = ['coc-clangd']
 color snazzy
 
