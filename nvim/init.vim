@@ -58,11 +58,15 @@ call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'connorholyday/vim-snazzy'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'turbio/bracey.vim'
+Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
 Plug 'thinca/vim-quickrun'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 let g:SnazzyTransparent = 1
 let g:coc_global_extensions = ['coc-clangd']
+" ==================== vim-instant-markdown ====================
+let g:instant_markdown_slow = 0
+let g:instant_markdown_autostart = 0
+let g:instant_markdown_autoscroll = 1
 color snazzy
 

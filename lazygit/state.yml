@@ -1,12 +1,12 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/scum/.config
-- /home/scum/github/dwm
-- /home/scum/github/picom
-- /home/scum/.vim
 - /home/scum/github/ScumTB.github.io
-- /home/scum/scripts
+- /home/scum/github/picom
+- /home/scum/github/dwm
 - /home/scum/Pictures/wallpapers
+- /home/scum/scripts
+- /home/scum/workspace/cxx-progressing
 - /home/scum/github/st
 startuppopupversion: 5
 customcommandshistory:
