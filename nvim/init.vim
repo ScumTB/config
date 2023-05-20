@@ -4,6 +4,8 @@ filetype indent on
 filetype plugin on
 filetype plugin indent on
 set encoding=utf-8
+set clipboard+=unnamedplus
+
 
 noremap H 5h
 noremap J 5j
