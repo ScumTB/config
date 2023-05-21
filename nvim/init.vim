@@ -6,13 +6,10 @@ filetype plugin indent on
 set encoding=utf-8
 set clipboard+=unnamedplus
 
-
 noremap H 5h
 noremap J 5j
 noremap K 5k
 noremap L 5l
-
-
 
 let mapleader=" "
 syntax on
